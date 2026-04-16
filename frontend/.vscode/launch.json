@@ -7,7 +7,8 @@
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
-      "url": "http://localhost:4200/"
+      "url": "https://dev14ns.github.io/rentify/"
+      //  "url": "http://localhost:4200/"
     },
     {
       "name": "ng test",
