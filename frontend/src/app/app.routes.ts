@@ -3,11 +3,11 @@ import { AuthGuard } from './core/guards/auth-guard';
 import { MainLayoutComponent } from './core/layout/main-layout/main-layout';
 
 export const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'landing',
-    pathMatch: 'full'
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'landing',
+  //   pathMatch: 'full'
+  // },
   {
     path: 'landing',
     loadComponent: () => import('./features/landing/landingpage')
