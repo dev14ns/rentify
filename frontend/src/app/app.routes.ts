@@ -30,7 +30,7 @@ export const routes: Routes = [
   },
   {
     path: 'tenant-profile',
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     loadComponent: () => import('./features/tenant/tenant-profile/tenant-profile')
       .then(m => m.TenantProfileComponent)
   },
@@ -49,7 +49,7 @@ export const routes: Routes = [
   {
     path: 'admin',
     component: MainLayoutComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     data: { role: 'admin' },
     children: [
       {
@@ -88,7 +88,7 @@ export const routes: Routes = [
   {
     path: 'landlord',
     component: MainLayoutComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     data: { role: 'landlord' },
     children: [
       {
@@ -122,7 +122,7 @@ export const routes: Routes = [
   // === TENANT ROUTES ===
   {
     path: 'tenant',
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     loadComponent: () => import('./features/tenant/dashboard/tenant-dashboard')
       .then(m => m.TenantDashboard)
   },
